@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tchau...</title>
+	<style>
+		body {
+			background-color: #F7E8D6;
+			font-family: 'Old Standard TT', serif;
+			font-size: 1.2em;
+			color: #4A4A4A;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 2.5em;
+			margin-top: 50px;
+			text-shadow: 1px 1px 1px #F7E8D6;
+		}
+
+		p {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		.button {
+			display: inline-block;
+			background-color: #4A4A4A;
+			color: #F7E8D6;
+			padding: 0.5em 1.5em;
+			border: none;
+			border-radius: 5px;
+			font-size: 1.2em;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			transition: all 0.3s ease;
+			text-shadow: 1px 1px 1px #4A4A4A;
+		}
+
+		.button:hover {
+			background-color: #F7E8D6;
+			color: #4A4A4A;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+        .button_bye {
+			display: inline-block;
+			background-color: red;
+			color: #F7E8D6;
+			padding: 0.5em 1.5em;
+			border: none;
+			border-radius: 5px;
+			font-size: 1.2em;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			transition: all 0.3s ease;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-shadow: 1px 1px 1px #4A4A4A;
+		}
+
+		.button_bye:hover {
+			background-color: #F7E8D6;
+			color: #4A4A4A;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Você tem certeza?</h1>
+	<p>Surpresas impressionantes esperam por você, nobre forasteiro.</p>
+	<a href="./view_question.html" class="button">Continuar</a>
+    <a href="#" class="button_bye" onmousemove="moveButton()">Adeus...</a>
+
+	<script>
+		function moveButton() {
+			var button = document.querySelector(".button_bye");
+			var randomX = Math.floor(Math.random() * (window.innerWidth - button.offsetWidth));
+			var randomY = Math.floor(Math.random() * (window.innerHeight - button.offsetHeight));
+
+			button.style.left = randomX + "px";
+			button.style.top = randomY + "px";
+		}
+	</script>
+</body>
+</html>

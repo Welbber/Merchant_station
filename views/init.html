@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Merchant station</title>
+	<style>
+		body {
+			background-color: #5B3B2A;
+			font-family: 'Old Standard TT', serif;
+			font-size: 1.2em;
+			color: #F7E8D6;
+			line-height: 1.5;
+			margin: 0;
+		}
+
+		h1 {
+			font-size: 2.5em;
+			color: #F7E8D6;
+			text-align: center;
+			margin-top: 2em;
+			margin-bottom: 1em;
+			text-shadow: 2px 2px 2px #5B3B2A;
+		}
+
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 2em;
+			background-color: #F7E8D6;
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+		}
+
+		label {
+			display: block;
+			margin-bottom: 1em;
+			font-size: 1.2em;
+			color: #5B3B2A;
+		}
+
+		input[type="text"],
+		select {
+			font-size: 1.2em;
+			padding: 0.5em;
+			border: none;
+			border-radius: 5px;
+			background-color: #F7E8D6;
+			color: #5B3B2A;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+			width: 100%;
+			margin-bottom: 1em;
+			height: 2.5em;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+
+		input[type="submit"] {
+			background-color: #5B3B2A;
+			color: #F7E8D6;
+			padding: 0.5em 2em;
+			border: none;
+			border-radius: 5px;
+			font-size: 1.2em;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #F7E8D6;
+			color: #5B3B2A;
+			box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+		}
+
+		@media only screen and (max-width: 600px) {
+			form {
+				padding: 1em;
+			}
+		}
+
+		.button_yes {
+			margin-left: 30px;
+			display: inline-block;
+			background-color: #5B3B2A;
+			color: #F7E8D6;
+			padding: 0.5em 1.5em;
+			border: none;
+			border-radius: 5px;
+			font-size: 1.2em;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			transition: all 0.3s ease;
+			font-family: 'Old Standard TT', serif;
+			text-shadow: 1px 1px 1px #5B3B2A;
+		}
+
+		.button_yes:hover {
+			background-color: #F7E8D6;
+			color: #5B3B2A;
+			box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+		}
+
+		.button_no {
+			margin-left: 300px;
+			display: inline-block;
+			background-color: #4A4A4A;
+			color: #F7E8D6;
+			padding: 0.5em 1.5em;
+			border: none;
+			border-radius: 5px;
+			font-size: 1.2em;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			transition: all 0.3s ease;
+			font-family: 'Old Standard TT', serif;
+			text-shadow: 1px 1px 1px #4A4A4A;
+		}
+
+		.button_no:hover {
+			background-color: #F7E8D6;
+			color: #4A4A4A;
+			box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+		}
+		
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://static.wikia.nocookie.net/residentevil/images/4/4a/Site-favicon.ico/revision/latest?cb=20210702205606&amp;path-prefix=pt-br">
+
+</head>
+<body>
+	<h1>Merchant station</h1>
+	<form>
+		<h1 style="color: grey; margin-top: 50px;">Welcome! Got some rare things on sale, stranger. Interested?</h1>
+		<a href="./view_question.html" class="button_yes">Sim</a>
+		<a href="./view_end.html" class="button_no">Não</a>
+		
+	</form>
+</body>
